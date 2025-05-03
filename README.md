@@ -32,7 +32,7 @@
     ```bash
     git clone https://github.com/mezaneus/DevSecOps-proj.git
     ```
-    
+# cd DevSecOps/ and install docker image    
 
 **Step 3: Install Docker and Run the App Using a Container:**
 
@@ -103,6 +103,9 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
         ```
         trivy image <imageid>
         ```
+        to scan the current directory
+        ...
+        trivy fs .
         
         
 2. **Integrate SonarQube and Configure:**
